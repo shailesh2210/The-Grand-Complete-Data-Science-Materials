@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+  <link href="sticky-footer.css" rel="stylesheet">
+
+  <style>
+    .main {
+      /* background-color: rgb(239, 158, 216); */
+      /* background-color: rgb(237, 190, 224); */
+      background-color: rgb(240, 213, 232);
+    }
+
+    .hero {
+      background-image: url('static\RCMSN-Oct-1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .carousel .item {
+      height: 00px;
+    }
+
+    .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 100px;
+    }
+
+    .btn-primary {
+      background-color: #FF3366;
+      border-color: #FF3366;
+    }
+
+    .btn-primary:hover {
+      background-color: #FF215F;
+      border-color: #FF215F;
+    }
+
+    a.hover {
+      background-color: yellow;
+    }
+
+    a.hover-effect:hover {
+      background-color: rgb(165, 154, 167);
+      color: white;
+      cursor: pointer;
+    }
+
+    main {
+      min-height: 80vh;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto -60px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/">Home</a>
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/predict">Prediction</a>
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/treatment">Treatment Options</a>
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/news">Statistics</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <section class="main">
+      <div class="container">
+        <div class="center py-4 mx-2">
+          <div class="container">
+            <br>
+            <br>
+            <br>
+            <h2 class="text-center mt-4 mb-4 pb-4"> Breast Cancer Awareness</h2>
+            <h2 class="text-center mt-4 mb-4 pb-4">Trusted guidance when you need us most. Because no one should face
+              breast cancer alone.</h2>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>What is breast cancer and how does it occur?</h4>
+          <!-- <p>Breast cancer is the most common cancer among women in the United States. It is estimated that about
+            252,710 new cases of invasive breast cancer and 68,820 new cases of in situ breast cancer (early stage,
+            non-invasive breast cancer) will be diagnosed in women in 2023. About 41,130 women will die from breast
+            cancer in 2023.
+
+            Breast cancer can occur in men, but it is much less common. About 2,670 new cases of invasive breast cancer
+            and 460 new cases of in situ breast cancer are expected to be diagnosed in men in 2023. About 520 men will
+            die from breast cancer in 2023.
+
+            The risk of developing breast cancer increases with age. About 80% of breast cancers are diagnosed in women
+            over the age of 50. However, women of all ages can develop breast cancer.</p> -->
+          <p>Doctors know that breast cancer occurs when some breast cells begin to grow abnormally. These cells divide
+            more rapidly than healthy cells do and continue to accumulate, forming a lump or mass. Cells may spread
+            (metastasize) through your breast to your lymph nodes or to other parts of your body.</p>
+
+          <h4>At what age does breast cancer symptoms start in female?</h4>
+          <p>Most breast cancers are found in women who are 50 years old or older. Some women will get breast cancer
+            even without any other risk factors that they know of. Having a risk factor does not mean you will get the
+            disease, and not all risk factors have the same effect.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="static\web.jpg" alt="Breast Cancer" class="img-fluid">
+        </div>  
+      </div>
+    </div>
+  </section>
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- <img src="static\BC03_HandShoulder.jpg" alt="Breast Cancer" class="img-fluid"> -->
+          <img src="https://ecpc.org/wp-content/uploads/2020/10/shutterstock_1173834820-1200x800.jpg"
+            alt="Breast Cancer" class="img-fluid">
+        </div>
+
+        <div class="col-md-6">
+          <!-- Breast cancer is a prevalent form of cancer that primarily affects women but can also occur in men, albeit
+          less frequently. It arises in the breast cells and is one of the most commonly diagnosed cancers among women
+          worldwide. Several factors contribute to the risk of developing breast cancer, including age, family history,
+          gene mutations (such as BRCA1 and BRCA2), hormonal factors, obesity, alcohol consumption, and exposure to
+          radiation.
+
+          Detecting breast cancer early is crucial for successful treatment. Common symptoms include the presence of a
+          lump or thickening in the breast or underarm area, changes in breast size or shape, nipple changes, breast
+          pain, and skin dimpling or puckering. However, it's important to note that not all breast lumps are cancerous,
+          and proper diagnosis is essential.
+
+          Diagnosis typically involves a combination of breast exams, imaging tests (such as mammograms, ultrasounds, or
+          MRIs), and tissue biopsies. Breast cancer is then staged based on tumor size, lymph node involvement, and the
+          presence of metastasis. The stages range from 0 (non-invasive) to IV (advanced cancer with distant organ
+          spread).
+
+          Treatment options for breast cancer include surgery (such as lumpectomy or mastectomy), radiation therapy,
+          chemotherapy, targeted therapy, and hormone therapy. The choice of treatment depends on factors such as cancer
+          stage, tumor characteristics, and individual patient factors. -->
+          <h4>How can we understand we are having breast cancer</h4>
+
+          <p>
+            To understand if you might have breast cancer, watch for signs like lumps, changes in breast size or shape,
+            skin abnormalities, and nipple changes. Consult a healthcare professional for a clinical examination and
+            consider screening tests like mammograms or ultrasounds. A biopsy can confirm the presence of cancer. Early
+            detection is important, so seek medical attention if you notice any concerning breast changes.</p>
+
+        </div>
+
+      </div>
+    </div>
+    <section>
+      <br>
+      <h3 class="text-center mt-2 mb-2 pb-1">Some Informative Videos</h3>
+      <br>
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <iframe width="550" height="315" class="mx-3" src="https://www.youtube.com/embed/KyeiZJrWrys"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+          <iframe width="550" height="315" src="https://www.youtube.com/embed/4D0fZelq8hY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+    </section>
+    <!-- <footer class="footer fixed-bottom navbar-light bg-light ">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <ul class="footer">
+            <p class="nav justify-content-center text-center"> Muskan Padvekar and Madhushree Parab | © 2023 Company, Inc. All rights reserved.</p>
+          </ul>
+        </div>
+      </nav>
+    </footer> -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

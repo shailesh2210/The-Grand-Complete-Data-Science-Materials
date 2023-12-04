@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+
+  <style>
+    body {
+        /* background-color: #b5569db0; */
+        background-color: rgb(240, 213, 232);
+    }
+
+    .hero {
+      background-image: url('static\RCMSN-Oct-1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #9b2626;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .carousel .item {
+      height: 00px;
+    }
+
+    .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 100px;
+    }
+
+    .btn-primary {
+      background-color: #FF3366;
+      border-color: #FF3366;
+    }
+
+    .btn-primary:hover {
+      background-color: #FF215F;
+      border-color: #FF215F;
+    }
+
+    a.hover {
+      background-color: yellow;
+    }
+
+    a.hover-effect:hover {
+      
+      background-color: rgb(182, 167, 185);
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body >
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/">Home</a>
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/predict">Prediction</a>
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/treatment">Treatment Options</a>
+      <a class="hover-effect navbar-brand font-weight-bold px-4  " href="/news">Statistics</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <!-- background-color: rgb(165, 154, 167); -->
+  </header>
+    <br>
+    <div class="container" py-6 bt-6>
+        <!-- <h6 class="pt-3"> <a href="url">BACK</a></h6> -->
+        <!-- <span class="bi bi-arrow-return-left"></span>
+        <a href="/" class="previous">&laquo; Back</a> -->
+
+        <div class="col-md-12">
+            <form class="form-group" action="{{ url_for('result') }}" method="POST">
+                <br><br>
+                <h2 style="text-align: center; font-weight: bold;">Breast Cancer Prediction</h2>
+                <br><br>
+                <div class="row jumbotron">
+                    <div class="col-md-4 mb-3">
+                        <label for="texture_mean">Texture_mean</label>
+                        <input type="text" class="form-control" id="texture_mean" name="texture_mean" placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="smoothness_mean">Smoothness_mean</label>
+                        <input type="text" class="form-control" id="smoothness_mean" name="smoothness_mean"
+                            placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="compactness_mean">Compactness_mean</label>
+                        <input type="text" class="form-control" id="compactness_mean" name="compactness_mean"
+                            placeholder="">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="symmetry_mean">Symmetry_mean</label>
+                        <input type="text" class="form-control" id="symmetry_mean" name="symmetry_mean" placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="fractal_dimension_mean">Fractal_dimension_mean</label>
+                        <input type="text" class="form-control" id="fractal_dimension_mean"
+                            name="fractal_dimension_mean" placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="texture_se">Texture_se</label>
+                        <input type="text" class="form-control" id="texture_se" name="texture_se" placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="smoothness_se">Smoothness_se</label>
+                        <input type="text" class="form-control" id="smoothness_se" name="smoothness_se" placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="symmetry_se">Symmetry_se</label>
+                        <input type="text" class="form-control" id="symmetry_se" name="symmetry_se" placeholder="">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="symmetry_worst">Symmetry_worst</label>
+                        <input type="text" class="form-control" id="symmetry_worst" name="symmetry_worst"
+                            placeholder="">
+                    </div>
+                    <div class="col-md-12 py-4" style="text-align: center;">
+                        <a class="btn btn-dark" href="/" role="button">Back</a>
+                        <button type="submit" class="btn btn-dark">Result</button>
+                    </div>
+                    
+
+                    <!-- <div class = "container" py-6>
+                        <br><br><h3 class="text-center">{{ predicted_text }}<h3>
+                        </div> -->
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
